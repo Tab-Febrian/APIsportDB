@@ -31,7 +31,6 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
     @Override
     public void onBindViewHolder(@NonNull TeamViewHolder holder, int position) {
         Team team = teamList.get(position);
-        Log.d("GAMBAR_URL", "Logo URL: " + team.getStrBadge());
         holder.tvTeamName.setText(team.getStrTeam());
         holder.tvTeamStadium.setText(team.getStrStadium());
         Glide.with(context)
