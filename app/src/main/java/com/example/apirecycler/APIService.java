@@ -8,4 +8,7 @@ public interface APIService {
 
     @GET("search_all_teams.php?s=Soccer&c=Spain")
     Call<TeamResponse> getSpanishLeagueTeams();
+
+    @GET("all_countries.php")
+    Call<CountriesResponse> getAllCountries();
 }
